@@ -1,0 +1,634 @@
+{
+  "version": 2,
+  "seedRevision": 1,
+  "visits": [],
+  "programs": [
+    {
+      "id": "educacao-infantil",
+      "name": "Educação Infantil · trilha curta",
+      "stage": "Educação Infantil",
+      "age": "5 a 7 anos",
+      "site": "Case Viver",
+      "durationMinutes": 240,
+      "objective": "Cuidar, brincar e educar.",
+      "introduction": "Experiências de educação infantil relacionadas aos campos de experiência da BNCC.",
+      "activities": [
+        "Acolhida, organização de pertences, banheiro e água.",
+        "Orientações para a visita e segurança da turma.",
+        "Trilha curta: observação de árvores e arbustos; observação de insetos com lupas e escuta das aves.",
+        "Descida em direção ao lago e observação de borboletas; volta ao lago com paradas para conversar sobre plantas e insetos.",
+        "Registro das percepções em forma de desenho, na área da figueira.",
+        "Lanche e brincadeiras nos espaços disponíveis: brinquedos, quadra de areia e petecas."
+      ],
+      "schedule": [
+        {
+          "id": "infantil-chegada",
+          "label": "Chegada, pertences, banheiro e água",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "infantil-orientacao",
+          "label": "Acolhida e orientações de segurança",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "infantil-trilha",
+          "label": "Trilha curta: árvores, arbustos, insetos e aves",
+          "minutes": 50,
+          "kind": "program"
+        },
+        {
+          "id": "infantil-lago",
+          "label": "Lago: observação de plantas, insetos e borboletas",
+          "minutes": 50,
+          "kind": "program"
+        },
+        {
+          "id": "infantil-desenho",
+          "label": "Registro em desenho na área da figueira",
+          "minutes": 35,
+          "kind": "program"
+        },
+        {
+          "id": "infantil-lanche",
+          "label": "Lanche e hidratação",
+          "minutes": 20,
+          "kind": "shared"
+        },
+        {
+          "id": "infantil-recreacao",
+          "label": "Brincadeiras e espaços disponíveis",
+          "minutes": 55,
+          "kind": "program"
+        },
+        {
+          "id": "infantil-encerramento",
+          "label": "Organização e encerramento",
+          "minutes": 10,
+          "kind": "shared"
+        }
+      ]
+    },
+    {
+      "id": "fundamental-i",
+      "name": "Ensino Fundamental I · trilha média",
+      "stage": "Ensino Fundamental I",
+      "age": "8 a 10 anos",
+      "site": "Case Viver",
+      "durationMinutes": 240,
+      "objective": "Cuidar, brincar e educar.",
+      "introduction": "Observação da natureza, registro por fotografia e desenho com tinta guache.",
+      "activities": [
+        "Acolhida, organização de pertences, banheiro e água.",
+        "Trilha média acompanhada por instrutores e professores: árvores, arbustos, insetos com lupas e sons das aves.",
+        "Observação de borboletas durante o percurso; a proposta menciona coleta e posterior soltura.",
+        "Volta ao lago com paradas de observação e informações sobre plantas e insetos.",
+        "Passagem pelo mirante da sanga com auxílio de corda e retorno pelo meio da mata até a figueira.",
+        "Relato das percepções, fotografia de insetos e desenhos com tinta guache.",
+        "Lanche e atividades recreativas nos espaços indicados."
+      ],
+      "schedule": [
+        {
+          "id": "fund1-chegada",
+          "label": "Chegada, pertences, banheiro e água",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "fund1-orientacao",
+          "label": "Acolhida e orientações da trilha",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "fund1-trilha",
+          "label": "Trilha média: observação de plantas, insetos e aves",
+          "minutes": 65,
+          "kind": "program"
+        },
+        {
+          "id": "fund1-lago",
+          "label": "Lago, mirante da sanga e percurso pela mata",
+          "minutes": 40,
+          "kind": "program"
+        },
+        {
+          "id": "fund1-registro",
+          "label": "Fotografia e desenho com tinta guache",
+          "minutes": 30,
+          "kind": "program"
+        },
+        {
+          "id": "fund1-lanche",
+          "label": "Lanche e hidratação",
+          "minutes": 20,
+          "kind": "shared"
+        },
+        {
+          "id": "fund1-recreacao",
+          "label": "Brincadeiras e espaços disponíveis",
+          "minutes": 55,
+          "kind": "program"
+        },
+        {
+          "id": "fund1-encerramento",
+          "label": "Organização e encerramento",
+          "minutes": 10,
+          "kind": "shared"
+        }
+      ]
+    },
+    {
+      "id": "fundamental-ii-viver",
+      "name": "Ensino Fundamental II · trilha longa",
+      "stage": "Ensino Fundamental II",
+      "age": "10 a 12 anos",
+      "site": "Case Viver",
+      "durationMinutes": 240,
+      "objective": "Cuidar e educar; trabalhar o cuidado com o solo e a água e a necessidade da redução de lixo.",
+      "introduction": "Trilha longa de aproximadamente 40 minutos, conforme a proposta.",
+      "activities": [
+        "Acolhida, organização de pertences, banheiro e água.",
+        "Trilha longa (cerca de 40 minutos): observação de plantas, insetos, aves e mamíferos, quando possível.",
+        "Paradas junto ao lago, mirante da sanga, passagem com auxílio de corda e ponte de madeira.",
+        "Retorno pela mata, observação do campo e de figueiras estranguladoras características do Pampa.",
+        "Conversa sobre ecossistema, diferenças de clima e umidade, cuidado com o solo e a água e redução de resíduos.",
+        "Fotografia de insetos e aves; breve relato das percepções na área da figueira.",
+        "Lanche e recreação nos espaços previstos."
+      ],
+      "schedule": [
+        {
+          "id": "fund2-chegada",
+          "label": "Chegada, pertences, banheiro e água",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "fund2-orientacao",
+          "label": "Acolhida e orientações de segurança",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "fund2-trilha",
+          "label": "Trilha longa (40 min) e observação ambiental",
+          "minutes": 40,
+          "kind": "program"
+        },
+        {
+          "id": "fund2-conversa",
+          "label": "Água, solo, clima, ecossistema e resíduos",
+          "minutes": 40,
+          "kind": "program"
+        },
+        {
+          "id": "fund2-registro",
+          "label": "Fotografias e relato das percepções",
+          "minutes": 25,
+          "kind": "program"
+        },
+        {
+          "id": "fund2-lanche",
+          "label": "Lanche e hidratação",
+          "minutes": 20,
+          "kind": "shared"
+        },
+        {
+          "id": "fund2-recreacao",
+          "label": "Brincadeiras e espaços disponíveis",
+          "minutes": 75,
+          "kind": "program"
+        },
+        {
+          "id": "fund2-encerramento",
+          "label": "Organização e encerramento",
+          "minutes": 20,
+          "kind": "shared"
+        }
+      ],
+      "materials": [
+        "Cola",
+        "Folhas coletadas na trilha",
+        "Giz de cera",
+        "Papelão",
+        "Pincel",
+        "Tesoura",
+        "Tinta guache"
+      ]
+    },
+    {
+      "id": "medio-ilha-verde",
+      "name": "Fundamental II / Ensino Médio · Ilha Verde",
+      "stage": "Ensino Fundamental II e Ensino Médio",
+      "age": "12 a 17 anos",
+      "site": "Case Ilha Verde",
+      "durationMinutes": 240,
+      "objective": "Cuidar e educar.",
+      "introduction": "Visita aos espaços ambientais e produtivos descritos na proposta.",
+      "activities": [
+        "Recepção, organização de pertences, banheiro e água.",
+        "Introdução à produção de oliveiras e à ciclagem de nutrientes no solo.",
+        "Deslocamento em trator até o Case Agro e visita aos animais, ao biodigestor e às leiras de adubo.",
+        "Passagem pela usina fotovoltaica e visita à fábrica de água, conforme roteiro e liberação da equipe.",
+        "Retorno ao Case Ilha Verde, lanche e atividades recreativas nos espaços disponíveis.",
+        "Atividade sugerida na proposta: poema e discussão sobre preservação ambiental em matriz urbana; meditação coletiva."
+      ],
+      "schedule": [
+        {
+          "id": "medio-chegada",
+          "label": "Recepção, pertences, banheiro e água",
+          "minutes": 10,
+          "kind": "shared"
+        },
+        {
+          "id": "medio-oliveiras",
+          "label": "Oliveiras e ciclagem de nutrientes",
+          "minutes": 25,
+          "kind": "program"
+        },
+        {
+          "id": "medio-agro",
+          "label": "Case Agro: animais, biodigestor e adubo",
+          "minutes": 45,
+          "kind": "program"
+        },
+        {
+          "id": "medio-energia-agua",
+          "label": "Usina fotovoltaica e fábrica de água",
+          "minutes": 45,
+          "kind": "program"
+        },
+        {
+          "id": "medio-atividade",
+          "label": "Poema e discussão sobre preservação ambiental",
+          "minutes": 30,
+          "kind": "program"
+        },
+        {
+          "id": "medio-lanche",
+          "label": "Lanche e hidratação",
+          "minutes": 20,
+          "kind": "shared"
+        },
+        {
+          "id": "medio-recreacao",
+          "label": "Atividades recreativas disponíveis",
+          "minutes": 55,
+          "kind": "program"
+        },
+        {
+          "id": "medio-encerramento",
+          "label": "Organização e encerramento",
+          "minutes": 10,
+          "kind": "shared"
+        }
+      ]
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "b9d9538e-e4af-428d-89aa-83adf33d41ed",
+      "title": "Aparar a grama",
+      "site": "Case Viver",
+      "space": "Espaço e prazo a confirmar",
+      "dueDate": "",
+      "status": "pendente",
+      "assignee": "",
+      "notes": "Exemplo inicial solicitado pelo administrador. Confirmar o local, o responsável e a data antes de tratar como ordem de serviço."
+    },
+    {
+      "id": "ffa53903-fb54-4fc6-9491-556a0a4e84e6",
+      "title": "Limpeza geral dos ambientes",
+      "site": "Case Viver",
+      "space": "Ambientes a confirmar",
+      "dueDate": "",
+      "status": "pendente",
+      "assignee": "",
+      "notes": "Exemplo inicial solicitado pelo administrador. Definir os ambientes, a equipe responsável e o prazo."
+    },
+    {
+      "id": "f675bfcd-34e1-46a3-a42a-85133f3edbd3",
+      "title": "Aparar a grama",
+      "site": "Case Ilha Verde",
+      "space": "Espaço e prazo a confirmar",
+      "dueDate": "",
+      "status": "pendente",
+      "assignee": "",
+      "notes": "Exemplo inicial solicitado pelo administrador. Confirmar o local, o responsável e a data antes de tratar como ordem de serviço."
+    },
+    {
+      "id": "0cbd5925-1029-4425-8aec-00333b43dce0",
+      "title": "Limpeza geral dos ambientes",
+      "site": "Case Ilha Verde",
+      "space": "Ambientes a confirmar",
+      "dueDate": "",
+      "status": "pendente",
+      "assignee": "",
+      "notes": "Exemplo inicial solicitado pelo administrador. Definir os ambientes, a equipe responsável e o prazo."
+    }
+  ],
+  "schools": [],
+  "spaces": [
+    {
+      "id": "79749dba-e1ec-4f9f-a675-5ecb511a055d",
+      "name": "Trilhas e figueira",
+      "site": "Case Viver",
+      "notes": "Trilha e área de observação descritas na proposta pedagógica."
+    },
+    {
+      "id": "0bc0d847-0abe-4ab6-be10-89f31b7a44c3",
+      "name": "Lago",
+      "site": "Case Viver",
+      "notes": "Percurso com parada para observação da natureza."
+    },
+    {
+      "id": "5e33f1ed-85ec-491f-b032-f3309024634e",
+      "name": "Mirante da sanga",
+      "site": "Case Viver",
+      "notes": "Percurso descrito para a trilha média e longa."
+    },
+    {
+      "id": "08af7282-d3b2-48a6-aee3-1ad3f8bb10b1",
+      "name": "Ponte de madeira e campo",
+      "site": "Case Viver",
+      "notes": "Percurso descrito para a trilha longa."
+    },
+    {
+      "id": "82c05780-3741-4493-bd5c-32ac60c231d7",
+      "name": "Viveiro",
+      "site": "Case Viver",
+      "notes": "Localização indicada pelo administrador."
+    },
+    {
+      "id": "7be4059a-97b1-4216-913b-3fb3157af3f2",
+      "name": "Quadra de areia e brinquedos",
+      "site": "Case Viver",
+      "notes": "Espaços recreativos citados na proposta."
+    },
+    {
+      "id": "78b8f754-6392-4db0-bb34-a5e6fa4b8d38",
+      "name": "Horta de orgânicos",
+      "site": "Case Viver",
+      "notes": "Acesso e atividades conforme confirmação da equipe."
+    },
+    {
+      "id": "f75329ac-e152-4169-9531-956c3dbbd32a",
+      "name": "Trilhas e lago",
+      "site": "Case Ilha Verde",
+      "notes": "Espaço de visitação a conferir."
+    },
+    {
+      "id": "d114841c-2eeb-4def-8c9f-f258a367d7dc",
+      "name": "Case Agro",
+      "site": "Case Ilha Verde",
+      "notes": "Animais, biodigestor e leiras de adubo conforme a proposta."
+    },
+    {
+      "id": "42390d3e-b159-4cec-beae-3dacfe65adce",
+      "name": "Usina fotovoltaica e fábrica de água",
+      "site": "Case Ilha Verde",
+      "notes": "Visitação conforme roteiro, capacidade e liberação da equipe."
+    },
+    {
+      "id": "f2124b2b-b764-4253-ad74-bbef59992cca",
+      "name": "Quadra e espaços de lazer",
+      "site": "Case Ilha Verde",
+      "notes": "Quadra, balanços e mesa de sinuca citados na proposta."
+    }
+  ],
+  "equipment": [
+    {
+      "id": "55b7693e-5d8d-4541-b388-3f63c5e478b3",
+      "name": "Tirolesa",
+      "site": "Case Ilha Verde",
+      "quantity": null,
+      "condition": "A confirmar com a equipe",
+      "notes": "Unidade informada pelo administrador. Conferir funcionamento, requisitos de segurança e supervisão antes da visita."
+    },
+    {
+      "id": "7f0017d2-e4d6-4c80-8571-d6e0f7ef834e",
+      "name": "Viveiro",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "A confirmar com a equipe",
+      "notes": "Local indicado pelo administrador."
+    },
+    {
+      "id": "7750908e-027f-4099-bb92-5e4b959e5191",
+      "name": "Pedalinhos",
+      "site": "Case Ilha Verde",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Atividade citada na proposta. Quantidade e disponibilidade a informar."
+    },
+    {
+      "id": "24c7ad86-053b-4fe8-bc30-550e80226d7f",
+      "name": "Petecas",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Atividade recreativa citada na proposta. Quantidade a informar."
+    },
+    {
+      "id": "576e75de-ec49-4060-8875-ecfe61c1c2a2",
+      "name": "Brinquedos",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Recursos recreativos citados na proposta."
+    },
+    {
+      "id": "b43ca092-d53e-46c6-99b6-ce67718b3f2d",
+      "name": "Perna de pau",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Atividade recreativa citada na proposta."
+    },
+    {
+      "id": "632264a3-abc3-45e1-a39d-b336875da37b",
+      "name": "Bolas de futebol e vôlei",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Atividades e quadra citadas na proposta."
+    },
+    {
+      "id": "d14f1a27-414a-411c-9ec4-84836cc3105d",
+      "name": "Balanços",
+      "site": "Case Ilha Verde",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Espaço de lazer citado na proposta."
+    },
+    {
+      "id": "369bcb9c-f1c8-4f5d-9b03-8b54856b2299",
+      "name": "Mesa de sinuca",
+      "site": "Case Ilha Verde",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Espaço de lazer citado na proposta."
+    },
+    {
+      "id": "b6b521ee-08a4-47bd-a82f-55234d2f9434",
+      "name": "Lupas de mão",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Conferir antes de cada visita",
+      "notes": "Auxílio para observação de insetos nas trilhas."
+    },
+    {
+      "id": "8d58c488-51fd-45d7-be82-e4cf91bde8b1",
+      "name": "Puçás para observação",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "A confirmar com a equipe",
+      "notes": "A proposta menciona puçás. Confirmar protocolo e autorizações; preferir observação sem captura."
+    },
+    {
+      "id": "82361056-897b-4be9-8a75-4e1debf63849",
+      "name": "Cola",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    },
+    {
+      "id": "5286fd1a-d001-4fcd-a007-90d4c487ff53",
+      "name": "Folhas coletadas na trilha",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    },
+    {
+      "id": "e722ac3b-2255-45af-9f71-fd9a2787c772",
+      "name": "Giz de cera",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    },
+    {
+      "id": "4895b384-4cba-4813-9cd8-4a3cae72e6ec",
+      "name": "Papelão",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    },
+    {
+      "id": "f2e6ed4f-5046-441b-b4bf-8a4abfea69ac",
+      "name": "Pincel",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    },
+    {
+      "id": "6dc7df07-848e-4faf-9352-44c54f128500",
+      "name": "Tesoura",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    },
+    {
+      "id": "6e3fae50-827b-43bf-bab2-e15d18d86663",
+      "name": "Tinta guache",
+      "site": "Case Viver",
+      "quantity": null,
+      "condition": "Quantidade a confirmar",
+      "notes": "Material pedagógico citado na proposta para o Ensino Fundamental II."
+    }
+  ],
+  "vehicles": [],
+  "staff": [],
+  "financeItems": [],
+  "documents": [],
+  "settings": {
+    "name": "CASE VIVER",
+    "caseViverAddress": "",
+    "ilhaVerdeAddress": "",
+    "schedule": [
+      {
+        "id": "acolhida",
+        "label": "Acolhida e orientações",
+        "minutes": 15,
+        "kind": "shared"
+      },
+      {
+        "id": "primeiro-ciclo",
+        "label": "Primeira vivência nos dois espaços",
+        "minutes": 80,
+        "kind": "rotation"
+      },
+      {
+        "id": "lanche",
+        "label": "Lanche e hidratação",
+        "minutes": 20,
+        "kind": "shared"
+      },
+      {
+        "id": "transicao",
+        "label": "Transição e deslocamento",
+        "minutes": 20,
+        "kind": "shared"
+      },
+      {
+        "id": "segundo-ciclo",
+        "label": "Troca de espaço e segunda vivência",
+        "minutes": 80,
+        "kind": "rotation"
+      },
+      {
+        "id": "encerramento",
+        "label": "Partilha, recreação e encerramento",
+        "minutes": 25,
+        "kind": "shared"
+      }
+    ],
+    "interleavedSchedule": [
+      {
+        "id": "acolhida",
+        "label": "Acolhida e orientações",
+        "minutes": 15,
+        "kind": "shared"
+      },
+      {
+        "id": "primeiro-ciclo",
+        "label": "Primeira vivência nos dois espaços",
+        "minutes": 80,
+        "kind": "rotation"
+      },
+      {
+        "id": "lanche",
+        "label": "Lanche e hidratação",
+        "minutes": 20,
+        "kind": "shared"
+      },
+      {
+        "id": "transicao",
+        "label": "Transição e deslocamento",
+        "minutes": 20,
+        "kind": "shared"
+      },
+      {
+        "id": "segundo-ciclo",
+        "label": "Troca de espaço e segunda vivência",
+        "minutes": 80,
+        "kind": "rotation"
+      },
+      {
+        "id": "encerramento",
+        "label": "Partilha, recreação e encerramento",
+        "minutes": 25,
+        "kind": "shared"
+      }
+    ],
+    "calendarMonth": "2026-10",
+    "libraryTab": "schools"
+  }
+}

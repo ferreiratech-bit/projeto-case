@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#12372e" />
+    <meta
+      name="description"
+      content="Projeto pedagógico e painel administrativo do Complexo Ambiental Sustentável e Educacional."
+    />
+    <title>Complexo Ambiental Sustentável e Educacional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#" data-nav="dashboard" aria-label="Complexo Ambiental, início">
+          <span class="brand-symbol">c<span>.</span></span>
+          <span class="brand-copy">
+            <strong>CASE <span>VIVER</span></strong>
+            <small>GESTÃO DO COMPLEXO</small>
+          </span>
+        </a>
+
+        <span class="nav-label">GESTÃO</span>
+        <nav class="navigation" aria-label="Navegação principal">
+          <button class="nav-link active" data-nav="dashboard"><span class="nav-icon">⌂</span> Complexo</button>
+          <button class="nav-link" data-nav="agenda"><span class="nav-icon">▦</span> Agenda</button>
+          <button class="nav-link" data-nav="visits"><span class="nav-icon">◎</span> Agenda e visitações <span class="nav-count" id="visit-count">0</span></button>
+          <button class="nav-link" data-nav="maintenance"><span class="nav-icon">⌁</span> Manutenção <span class="nav-dot" id="maintenance-dot"></span></button>
+          <button class="nav-link" data-nav="library"><span class="nav-icon">▤</span> Cadastros</button>
+          <button class="nav-link" data-nav="finance"><span class="nav-icon">↗</span> Cardápio e custos</button>
+        </nav>
+
+        <span class="nav-label nav-label-spaced">UNIDADES DO COMPLEXO</span>
+        <nav class="navigation unit-navigation" aria-label="Unidades do complexo">
+          <button class="nav-link" data-unit="Case Viver"><span class="nav-icon">⌂</span> Case Viver</button>
+          <button class="nav-link" data-unit="Case Ilha Verde"><span class="nav-icon">◌</span> Case Ilha Verde</button>
+          <button class="nav-link" data-unit="Case Agro"><span class="nav-icon">❋</span> Case Agro</button>
+          <button class="nav-link" data-unit="Case Água"><span class="nav-icon">≈</span> Case Água</button>
+          <button class="nav-link" data-unit="EMPORIO"><span class="nav-icon">◇</span> Emporio</button>
+        </nav>
+
+        <span class="nav-label nav-label-spaced">ACOMPANHAMENTO</span>
+        <nav class="navigation" aria-label="Relatórios e configurações">
+          <button class="nav-link" data-nav="reports"><span class="nav-icon">▥</span> Relatórios</button>
+          <button class="nav-link" data-nav="settings"><span class="nav-icon">⚙</span> Configurações</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="offline-card">
+            <span class="online-indicator"></span>
+            <span><strong>Área administrativa</strong><small>Dados compartilhados em todos os computadores</small></span>
+          </div>
+          <span class="sidebar-version">4 EIXOS · EMPORIO</span>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-button mobile-menu" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">☰</button>
+            <div class="breadcrumb"><span>COMPLEXO</span><span class="breadcrumb-separator">/</span><strong id="breadcrumb-current">Complexo ambiental</strong></div>
+          </div>
+          <div class="topbar-actions">
+            <span class="today-chip" id="today-label"></span>
+            <button class="button button-primary button-small" id="header-add">＋ <span>Nova visitação</span></button>
+          </div>
+        </header>
+
+        <section class="page-view active" data-view="dashboard" id="page-dashboard"></section>
+        <section class="page-view" data-view="agenda" id="page-agenda" hidden></section>
+        <section class="page-view" data-view="programs" id="page-programs" hidden></section>
+        <section class="page-view" data-view="visits" id="page-visits" hidden></section>
+        <section class="page-view" data-view="maintenance" id="page-maintenance" hidden></section>
+        <section class="page-view" data-view="library" id="page-library" hidden></section>
+        <section class="page-view" data-view="finance" id="page-finance" hidden></section>
+        <section class="page-view" data-view="reports" id="page-reports" hidden></section>
+        <section class="page-view" data-view="settings" id="page-settings" hidden></section>
+        <section class="page-view" data-view="case-space" id="page-case-space" hidden></section>
+
+        <footer class="main-footer">
+          <span>COMPLEXO AMBIENTAL SUSTENTÁVEL E EDUCACIONAL</span>
+          <span>CASE VIVER <span class="footer-divider">·</span> CASE ILHA VERDE <span class="footer-divider">·</span> CASE AGRO <span class="footer-divider">·</span> CASE ÁGUA <span class="footer-divider">·</span> EMPORIO</span>
+        </footer>
+      </main>
+    </div>
+
+    <dialog class="modal" id="app-modal" aria-labelledby="modal-title">
+      <div id="modal-content"></div>
+    </dialog>
+    <div class="print-document" id="print-document"></div>
+    <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+
+    <script>
+      let camposTimer;
+
+      function coletarCampos() {
+        const campos = {};
+        document.querySelectorAll("form input[name], form select[name], form textarea[name]").forEach((campo) => {
+          if (campo.type === "checkbox") {
+            campos[campo.name] ??= [];
+            campos[campo.name].push(campo.checked ? campo.value : "");
+          } else if (campo.type !== "file") {
+            campos[campo.name] = campo.value;
+          }
+        });
+        fetch("/api/importar", {
+          method: "POST",
+          headers: { "Content-Type": "application/json; charset=utf-8" },
+          body: JSON.stringify({ fields: campos }),
+        }).catch(() => {});
+      }
+
+      function agendarSalvarCampos() {
+        clearTimeout(camposTimer);
+        camposTimer = setTimeout(coletarCampos, 500);
+      }
+
+      function preencherCampos(campos = {}) {
+        Object.entries(campos).forEach(([nome, valor]) => {
+          document.querySelectorAll(`[name="${CSS.escape(nome)}"]`).forEach((campo, indice) => {
+            if (campo.type === "checkbox") {
+              campo.checked = Array.isArray(valor) ? valor[indice] === campo.value : valor === campo.value;
+            } else if (campo.type !== "file") {
+              campo.value = Array.isArray(valor) ? (valor[indice] ?? "") : valor;
+            }
+          });
+        });
+      }
+
+      document.addEventListener("input", (evento) => {
+        if (evento.target.closest("form")) agendarSalvarCampos();
+      });
+      document.addEventListener("change", (evento) => {
+        if (evento.target.closest("form")) agendarSalvarCampos();
+      });
+      document.addEventListener("submit", agendarSalvarCampos);
+
+      fetch("/api/data", { cache: "no-store" })
+        .then((resposta) => resposta.ok ? resposta.json() : {})
+        .then((dados) => preencherCampos(dados.formData || {}));
+
+      new MutationObserver(() => {
+        fetch("/api/data", { cache: "no-store" })
+          .then((resposta) => resposta.ok ? resposta.json() : {})
+          .then((dados) => preencherCampos(dados.formData || {}));
+      }).observe(document.body, { childList: true, subtree: true });
+    </script>
+  </body>
+</html>
